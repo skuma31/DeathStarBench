@@ -1,4 +1,4 @@
 Depending on the number of worker nodes of the cluster, you need to rename the worker node name to r07 or r08 or r09 or r10. In this repo, I have single worker node in the cluster , so all the deployment file you can find one worker node called r07.
 Service files are updated with different ports, starts from 27017 to 27023.
 Update the service name in  mongodb-reservation-service.yaml and mongodb-reservation-deployment.yaml with mongodb-reserve.
-To make wrk2 in Ubuntu20.04, install make and libssl-dev packages.
+To make wrk2 in Ubuntu20.04, install make,libssl-dev and libz-dev packages. (apt-get install make libz-dev libssl-dev -y)
