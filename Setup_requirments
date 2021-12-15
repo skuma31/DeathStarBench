@@ -2,3 +2,6 @@ Depending on the number of worker nodes of the cluster, you need to rename the w
 Service files are updated with different ports, starts from 27017 to 27023.
 Update the service name in  mongodb-reservation-service.yaml and mongodb-reservation-deployment.yaml with mongodb-reserve.
 To make wrk2 in Ubuntu20.04, install make,libssl-dev and libz-dev packages. (apt-get install make libz-dev libssl-dev -y)
+Installing metric on kubernetes cluster. (kubectl apply -f https://raw.githubusercontent.com/pythianarora/total-practice/master/sample-kubernetes-code/metrics-server.yaml)
+Installing Prometheus.(aptdevopscube.com/setup-prometheus-monitoring-on-kubernetes/, https://devopscube.com/node-exporter-kubernetes/ , https://devopscube.com/alert-manager-kubernetes-guide/)
+Know more about wrk benchmark . (https://github.com/wg/wrk)
